@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Urban Sky</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+        <header>
+            <image id="logo" class="lax" data-lax-translate-y=" 0 0, 400 -400" src="./Urban-Sky.png"></image>
+            <h1 class="btn-2 lax" data-lax-translate-y="0 0,400 -400" data-lax-opacity="0 1, 100 0" ><a href=#page-2>what we do</a></h1>
+        </header>
+    <section id="page-2">
+        <image id="dam" class="lax" data-lax-preset="driftRight fadeIn" src="./dam-png.png"></image>
+        <image id="small-city" class="lax" data-lax-preset="driftLeft fadeIn" src="./small-city.png"></image>
+        <image id="green" class="lax" data-lax-preset="driftLeft fadeIn" src="./Green-Energy.png"></image>
+        <div id="what" class="lax" data-lax-translate-y="200 0, 1900 900" data-lax-preset="">
+            <h2>Reusable near-space balloons</h2>
+            <p>Urban Sky is developing the first ever reusable 'micro-sat' version of a near-space balloon, armed with sensors that collect high-value Earth observation data over entire cities, serving a multi-billion dollar imagery market and making daily and weekly aerial imagery collection a cost-effective reality.</p>
+        </div>
+        <div id="why" class="lax" data-lax-translate-y="200 0, 1900 900" data-lax-preset="blurIn">
+            <h2>What is the difference?</h2>
+            <p>Our micro-balloons will collect more frequent and higher-res data (better than satellites), with broader area coverage (better than UAVs and aircraft), all at a cost orders of magnitude cheaper, serving a wide range of markets that include urban planning, insurance, construction, fresh maps for autonomous cars, public safety, roofing, agriculture and land use, and many more.</p>
+        </div>
+        <div id="hmm" class="lax" data-lax-translate-y="200 0, 1900 900" data-lax-preset="blurIn">
+            <h2>What will it bring?</h2>
+            <p>With a new wealth of data from the stratosphere - this completely untapped layer of Earth’s atmosphere - we can fundamentally change the collective human understanding of the surface of our planet and urban centers.</p>
+        </div>
+        <div id="team">
+            <h2 class="lax" data-lax-preset="blurIn">Who is doing this?</h2>
+            <div class="item lax" id="andrew-item" data-lax-preset="blurIn">
+                <image id="Andrew" src="./Andrew.jpg"></image>
+                <h2>Andrew Antonio</h2>
+                <h3>Co-Founder and CEO</h3>
+                <p class="describe">7+ years of business development experience including Director of Commerical Business Development at World View. Washington College B.A. in Bussiness Management. </p>
+                <a href="https://www.linkedin.com/in/andrewfantonio/" target="_blank" class="in">
+                    <div class="card">
+                        <img src="./LI-In-Bug.png" class="img-bottom" alt="Card Back">
+                        <img src="./linkedin-reverse.png" class="img-top" alt="Card Front">
+                    </div>
+                
+                </a>
+            </div>
+            <div class="item lax" id="jared-item" data-lax-preset="blurIn">
+                <image id="Jared" src="./Jared.jpg"></image>
+                <h2>Jared Leidich</h2>
+                <h3>Co-Founder and CTO</h3>
+                <p class="describe">14+ years in manned and unmanned space systems projects for NASA, the Air Force Research Labs, Boeing Space Systems and Lockheed Martin Space Systems.</p>
+                <a href="https://www.linkedin.com/in/jared-leidich-pe-16b79813/" target="_blank" class="in">
+                    <div class="card">
+                        <img src="./LI-In-Bug.png" class="img-bottom" alt="Card Back">
+                        <img src="./linkedin-reverse.png" class="img-top" alt="Card Front">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="particles-js"></div>
+    <div id="particles-js2"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+     <script>
+        particlesJS.load('particles-js2','particlesjs-config2.json', function() {
+        console.log('particles.json2 loaded...');
+    })</script>
+    <script>
+            window.onload = function() {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    </script>
+</body>
+
+</html>
